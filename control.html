@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang trại thông minh</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.css"
+        integrity="sha512-+BYMzqWPGdpv0FljRUI2S5tTMqJyE9tgnbY8DqMseCIs6EbwSehRnLmuoAZSfYFxzcjhpagE+ubwBLaBIH/OHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header text-white">
+                <h3>VentiKT Farm</h3>
+                <button type="button" class="btn-close btn-close-white d-md-none" aria-label="Close"></button>
+            </div>
+
+            <div class="sidebar-menu">
+                <ul class="list-group list-group-flush">
+                    <li><a href="control.html" class="active list-group-item"><span
+                                class="fas fa-tachometer-alt "></span><span>Bảng điều khiển</span></a></li>
+                    <li><a href="user.html"><i class="fas fa-users"></i> Người dùng</a></li>
+                    <li><a href="season.html"><i class="fas fa-wind"></i> Mùa vụ</a></li>
+                    <li><a href="task.html"><i class="fas fa-tasks"></i> Công việc</a></li>
+                    <li><a href="device.html"><i class="fas fa-tablet"></i> Thiết bị</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div id="content" class="container-fluid">
+
+            <header class="row">
+                <div class="col toggler-btn ">
+                    <button type="button" data-toggle="collapse" class="btn d-md-none b bg-main" id="sidebarCollapse"><i
+                            class="fas fa-align-left"></i></button>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <ul class="nav nav-icons nav-account">
+                        <li class="nav-item"><a href="" class="nav-link"><i class="far fa-comment-alt"></i></a> </li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link " id="navbarDropdown" data-toggle="dropdown"
+                                aria-expanded="false"><img src="./img/avatar.png" alt=""></a>
+
+                            <div class="dropdown-menu menu-account  dropdown-menu-right mt-2"
+                                aria-labelledby="navbarDropdown">
+                                <!-- ADDED CLASS -->
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+
+            </header>
+
+
+
+
+            <!-- Tong quan -->
+            <div class="page-header">
+                <div class="page-block">
+                    <div class="row align-items-center">
+                        <div class="col-md-12">
+                            <div class="page-header-title ">
+                                <h5>Home</h5>
+                            </div>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home"></i></a></li>
+                                <li class="breadcrumb-item"><a href="#">Quản lý</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- Hien thi thong tin tong quan-->
+
+            <div class="row">
+                <div class="col-xl-4 col-sm-6 col-md-4 col-12">
+                    <div class="card  bg-c-green">
+                        <div class="card-body card-decorate">
+                            <div class="row align-items-center">
+                                <div class="card-icons">
+                                    <i class="fas fa-tasks card-icons "></i>
+                                </div>
+                                <div class="card-content">
+                                    <h6 class="text-white">Hoành thành</h6>
+                                    <h3 class="text-white">15</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-sm-6 col-md-4 col-12">
+                    <div class="card prod-p-card bg-c-yellow">
+                        <div class="card-body card-decorate">
+                            <div class="row align-items-center">
+                                <div class="card-icons">
+                                    <i class="fas fa-bomb"></i>
+
+                                </div>
+                                <div class="card-content">
+                                    <h6 class="text-white">Sắp hết hạn</h6>
+                                    <h3 class="text-white">5</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-sm-6 col-md-4 col-4 col-12 ">
+                    <div class="card prod-p-card bg-c-red">
+                        <div class="card-body card-decorate ">
+                            <div class="row align-items-center">
+                                <div class="card-icons">
+                                    <i class="fas fa-shipping-fast"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h6 class="text-white">Hết hạn</h6>
+                                    <h3 class="text-white">1</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tong quan trang trai -->
+
+            <div class="row mt-4 ml-1 mr-1">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Tong quan trang trai-->
+                            <div>
+                                <h5 class="card-title text-dark">Tổng quan trang trại</h5>
+                                <p class="card-subtitle text-black-50">Trạng thái đơn hàng</p>
+                            </div>
+
+                            <!-- Trang thai don hang -->
+                            <div class="row mt-4">
+                                <div class="col-md-6 col-sm-6 mb-3 col-12">
+                                    <div class=" bg-dark card-content card-content-decorate text-white">
+                                        <div class="row">
+                                            <div class="col-auto ">
+                                                <div class="card-icons-body">
+                                                    <i class="fas fa-users"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card-content-body">
+                                                    <h3>2456</h3>
+                                                    <h6>Tổng nhân viên</h6>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 mb-3 col-12 ">
+
+                                    <div class=" bg-dark card-content card-content-decorate text-white">
+                                        <div class="row">
+                                            <div class="col-auto ">
+                                                <div class="card-icons-body">
+                                                    <i class="fas fa-plus"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card-content-body">
+                                                    <h3>23</h3>
+                                                    <h6>Nhân viên mới</h6>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Tong quan trang trai-->
+                            <div>
+                                <h5 class="card-title text-dark">Tổng quan trang trại</h5>
+                                <p class="card-subtitle text-black-50">Trạng thái đơn hàng</p>
+                            </div>
+
+                            <!-- Trang thai don hang -->
+                            <div class="row mt-4">
+                                <div class="col-md-6 col-sm-6 mb-3 col-12">
+                                    <div class=" bg-dark card-content card-content-decorate text-white">
+                                        <div class="row">
+                                            <div class="col-auto ">
+                                                <div class="card-icons-body">
+                                                    <i class="fas fa-users"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card-content-body">
+                                                    <h3>2456</h3>
+                                                    <h6>Tổng nhân viên</h6>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 mb-3 col-12 ">
+
+                                    <div class=" bg-dark card-content card-content-decorate text-white">
+                                        <div class="row">
+                                            <div class="col-auto ">
+                                                <div class="card-icons-body">
+                                                    <i class="fas fa-plus"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card-content-body">
+                                                    <h3>23</h3>
+                                                    <h6>Nhân viên mới</h6>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <!-- Font Awesome JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/Menu.js"></script>
+
+</body>
+
+
+</html>
