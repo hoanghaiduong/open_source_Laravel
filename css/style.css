@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/background.jpg);
+}
+#img{
+    transition: padding-left 10s  linear;
+  -moz-transition: padding-left 10s  linear;
+  -webkit-transition: padding-left 10s linear;
+  animation:  5s infinite;
+  min-height: 100vh;
+ 
+}
+#img img{
+    animation:  5s infinite;
+    animation-name: quay;
+    position: absolute;
+    top: 30vh;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    z-index: 4;
+}
+@keyframes quay{
+    from{ transform: rotate(0deg);}
+    to{ transform: rotate(360deg);}
+}
+#img:active{
+    padding-left: 1250px;
+}
+#content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    z-index: 2;
+    font-size: 2.5em;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 40vh;
+}
+#content_box{
+    z-index: 3;
+    background-color: black;
+    position: absolute;
+    height: 50px;
+    right: 0;
+    top: 40vh;
+    width: 1450px;
+    transition: 10s linear;
+}
+.content{
+    z-index: 1;
+}
